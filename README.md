@@ -4,21 +4,21 @@
 
 ## 📁 Структура проекта
 📦 DC_motor
-├── 📂 models # Модели Simulink
-│ └── DC_motor.slx # Основная модель
-├── 📂 Const # Константы и параметры
-│ └── Initial_const.m # Инициализация констант
-├── 📂 Tests # Модульные тесты
-│ └── DCMotorTest.m # Тестовый класс
-├── 📂 Shortcuts # Полезные скрипты
-│ ├── Run_tests.m # Запуск тестов
-│ ├── Initialization.m # Инициализация
-│ └── Clear_trash.m # Очистка временных файлов
-├── 📂 docs # Документация
-├── 📂 resources # Ресурсы
-├── 📂 slprj # Временные файлы Simulink
-├── DC_motor.prj # Файл проекта MATLAB
-└── README.md # Этот файл
+📂 models # Модели Simulink
+  DC_motor.slx # Основная модель
+📂 Const # Константы и параметры
+  Initial_const.m # Инициализация констант
+📂 Tests # Модульные тесты
+  DCMotorTest.m # Тестовый класс
+📂 Shortcuts # Полезные скрипты
+  Run_tests.m # Запуск тестов
+  Initialization.m # Инициализация
+  Clear_trash.m # Очистка временных файлов
+📂 docs # Документация
+📂 resources # Ресурсы
+📂 slprj # Временные файлы Simulink
+  DC_motor.prj # Файл проекта MATLAB
+  README.md # Этот файл
 
 
 ## ⚙️ Параметры двигателя
