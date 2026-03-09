@@ -1,0 +1,26 @@
+% runTests.m – ярлык для запуска тестов модели ДПТ с ПВ
+% Разместите этот файл в папке Shortcuts вашего проекта.
+
+% Определяем корневую папку проекта (там, где лежат папки Shortcuts и Tests)
+projectRoot = fileparts(fileparts(mfilename('fullpath'))); % поднимаемся на два уровня от Shortcuts
+
+% Переходим в корень проекта
+cd(projectRoot);
+
+% Добавляем папку Tests в путь поиска, если её там ещё нет
+testsFolder = fullfile(projectRoot, 'Tests');
+if ~exist(testsFolder, 'dir')
+    error('Папка Tests не найдена в корне проекта.');
+end
+addpath(testsFolder);
+
+% Запускаем тесты
+disp('Запуск тестов DCMotorTest...');
+results = runtests('DCMotorTest');
+
+% Выводим краткую сводку
+disp(results);
+table(results);
+
+% При необходимости можно сгенерировать отчёт:
+open(results);
